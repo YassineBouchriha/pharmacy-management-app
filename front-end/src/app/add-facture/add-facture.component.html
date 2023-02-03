@@ -1,0 +1,56 @@
+<div class="head"><h1>Ajouter une Facture:<mat-icon (click)="closeDialog()">close</mat-icon></h1>
+</div>
+<mat-divider></mat-divider>
+<form #lform="ngForm" (ngSubmit)="add(lform.value)" >
+<div class="container">
+<input type="text" placeholder="Totale TTC" name="totale_TTC" ngModel>
+<input type="text" placeholder="Totale HT" name="totale_HT"  ngModel>
+</div>
+<div class="container">
+
+<input type="text" placeholder="Totale_tva" name="totale_TVA" ngModel>
+
+
+</div>
+<div class="container">
+  <mat-form-field appearance="fill" class="datepick">
+    <mat-label>Date d'Ajout</mat-label>
+    <input matInput [matDatepicker]="picker" class="pick" name="date_facture" ngModel>
+
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <div class="select" >
+    <select (change)="pick($event)">
+      <option value="0">Fournisseur</option>
+      <option *ngFor="let Fournisseur of fournisseurs" value="{{Fournisseur.id_fournisseur}}">{{Fournisseur.nom_fournisseur}}</option>
+    </select>
+    <div class="select_arrow">
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+<div class="container2">
+  <div class="select">
+    <select (change)="pickf($event)">
+      <option >prduit</option>
+      <option *ngFor="let prod of prods" value="{{prod.id_produit}}">{{prod.	lib_produit}}</option>
+    </select>
+    <div class="select_arrow">
+    </div>
+  </div>
+<div class="container3">
+<input type="reset" value="Reset" class="btn" id="rzt">
+<input type="submit" value="Submit" class="btn" id="sub" >
+</div>
+</div>
+
+
+
+
+</form>

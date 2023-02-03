@@ -1,0 +1,132 @@
+
+.mat-icon {
+  vertical-align: middle;
+  margin-right: 1rem;
+  color: white;
+}
+.mat-divider {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  border-top-width: 2px;
+  border-color: white;
+}
+.logo {
+  text-align: left;
+
+
+}
+.logo img {
+
+  width: 95px;
+}
+
+
+.mat-list-item {
+  color: #94a3b8 !important;
+  font-size: 0.8rem;
+  height: 44px !important;
+  margin-bottom: 4px;
+}
+
+.txt{
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+a {
+  margin-top: 2%;
+  vertical-align: 50px;
+}
+a:hover {
+  border-radius: 15px;
+  background-color: #3f51b5;
+
+
+}
+
+a.active {
+
+  border-radius: 15px;
+  background-color: #3f51b5;
+  color: white;
+}
+button {
+
+  outline: none;
+  border: 0;
+
+}
+.user {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  background: #3288ff;
+  border-radius: 500px;
+  font-size: larger;
+  color: white;
+  width: 70%;
+  height: 80px;
+  cursor: pointer;
+
+}
+.user:hover{
+  background: #3f51b5;
+
+}
+.user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 500px;
+  margin-top: 15px;
+  margin-left: -10px;
+  float:left ;
+
+}
+.user-info{
+  color: white;
+  font-size: 25px !important;
+  font-weight: 5005;
+  margin-top: 25px;
+  margin-left: 10px;
+  float:left ;
+
+}
+h4{
+  color: white;
+  font-size: 1.5rem;
+
+}
+.lgout{
+
+  font-size: 1.9rem;
+  margin-top: 300px;
+
+
+}
+.lgout a{
+  color: white;
+  margin-left: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  background: #ff3232;
+  border-radius: 500px;
+  font-size: larger;
+  color: white;
+  width: 70%;
+  height: 50px;
+  cursor: pointer;
+
+
+}
+
+
+
+

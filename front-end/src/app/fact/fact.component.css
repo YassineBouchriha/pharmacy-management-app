@@ -1,0 +1,180 @@
+body{
+  background: #1e293b;
+}
+.page {
+  color: white;
+  padding: 0 1rem;
+  background: #1e293b;
+}
+.content {
+  padding: 1rem;
+
+}
+.page__box {
+  min-height: 120px;
+  background: #1e293b;
+  margin: 0 -1rem;
+  font-size: 36px;
+}
+.page__content {
+
+  text-align: center;
+  min-height: calc(100vh - 178px);
+  border-radius: 10px;
+  margin-top: -2rem;
+  background: white;
+  color: black;
+  font-size: 2rem;
+
+}
+tbody{
+  font-size: 15px;
+}
+.btns{
+  display: flex; 
+  flex-direction: row;
+  
+  align-items: center;
+  margin-left: 83%;
+}
+
+.add{
+  margin-top: 2rem;
+  height: 35px;
+  width: 15px;
+  margin-bottom: 2rem;
+  margin-left: 90%;
+  margin-right: 2rem;
+  background-color:#44c767;
+  border-radius:42px;
+  display:inline-block;
+  cursor:pointer;
+
+}
+.dell{
+  margin-top: 2rem;
+  height: 35px;
+  width: 15px;
+  margin-bottom: 2rem;
+  margin-left: 90%;
+  margin-right: 2rem;
+  background-color:#cf2b2b;
+  border-radius:42px;
+  
+  cursor:pointer;}
+
+
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+button:hover:after {
+  width: 120%;
+  background-color: rgba(255,255,255,0);
+
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.btn{
+
+  height: 35px;
+  width: 7px;
+  align-items: center;
+  border-radius:42px;
+  cursor:pointer;
+ margin-left: 7px;
+  color: white !important;
+font-size: 1rem;
+}
+#del{
+  align-items: center;
+  align-content: center;
+
+  margin-left: 7px;
+
+
+}
+.searchBox {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top:8%;
+  left: 2%;
+
+  transform:  translate(0,0);
+  background:#1e293b;
+  height: 40px;
+  border-radius: 40px;
+
+
+}
+
+.searchBox:hover > .searchInput {
+  width: 450px;
+  padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color :#1e293b;
+}
+
+.searchButton {
+
+  color: #1e293b;
+  float: left;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.searchInput {
+  border:none;
+  background: none;
+  outline:none;
+  float:left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0px;
+
+}
+.material-icons{
+  color: #1e293b;
+  font-size: 2rem;
+
+}
+::placeholder {
+  color: #c0c0c0;
+  opacity: 0.5;
+  padding-left: 2px;
+
+}
+
+
+@media screen and (max-width: 620px) {
+  .searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+  }
+}
+
+

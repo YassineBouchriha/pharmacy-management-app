@@ -1,0 +1,44 @@
+<mat-nav-list>
+  <div class="logo py4">
+    <img src="assets/logo.png" alt="logo" class="logo" />
+
+  </div>
+
+  <mat-divider></mat-divider>
+    <div class="user">
+      <img src="assets/user.jpg" alt="user" class="user-img" />
+      <div class="user-info">
+        <h4>Admin</h4>
+      <p>
+
+  </div>
+  </div>
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLink="/produit" routerLinkActive="active">
+    <mat-icon matListIcon>add_shopping_cart</mat-icon>
+    <span matLine class="txt">Froduit</span>
+  </a>
+
+  <a mat-list-item routerLink="/facture" routerLinkActive="active">
+    <mat-icon matListIcon>receipt</mat-icon>
+    <span matLine class="txt">Facture</span>
+  </a>
+
+  <a mat-list-item routerLink="/labo" routerLinkActive="active">
+    <mat-icon matListIcon>store</mat-icon>
+    <span matLine class="txt">Laboratoire</span>
+  </a>
+  <a mat-list-item routerLink="/fam" routerLinkActive="active">
+    <mat-icon matListIcon>book</mat-icon>
+    <span matLine class="txt">Famille</span>
+  </a>
+  <a mat-list-item routerLink="/fournis" routerLinkActive="active">
+    <mat-icon matListIcon>local_shipping</mat-icon>
+    <span matLine class="txt">Fournisseur</span>
+  </a>
+  <div class="lgout">
+  <a mat-list-item (click)="logOut()" >
+    <mat-icon>power_off</mat-icon>
+    <span matLine class="txt" >Log Out</span>
+  </a></div>
+</mat-nav-list>

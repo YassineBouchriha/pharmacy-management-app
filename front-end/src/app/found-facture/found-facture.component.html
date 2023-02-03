@@ -1,0 +1,19 @@
+<p>Facture n°:</p> <h1>{{fact.id_facture}} </h1>
+<p>
+  Date Facture:</p><h1>{{fact.date_facture}}</h1>
+<p>
+  Fournisseur : </p><h1>{{fact.fournisseur.nom_fournisseur}}</h1>
+<p>
+  Produit : </p><h1>{{fact.produits}}</h1>
+<p>
+  Totale HT : </p><h1>{{fact.	totale_HT}}</h1>
+
+<p>
+  Totale TTC : </p><h1>{{fact.totale_TTC}}</h1>
+<p>
+  Totale TVA : </p><h1>{{fact.totale_TVA}}</h1>
+
+<footer>
+  <button (click)="printpage()"><mat-icon>print</mat-icon></button>
+
+</footer>

@@ -1,0 +1,26 @@
+<div class="head"><h1>Ajouter un laboratoire:<mat-icon >close</mat-icon></h1>
+</div>
+<mat-divider></mat-divider>
+<form  [formGroup]="FormValue">
+<div class="container">
+<input formControlName="nom_fournisseur" type="text" >
+
+<input type="text" formControlName="adress_fournisseur" >
+</div>
+<div class="container">
+<input type="email" formControlName="email_fournisseur">
+<input type="text"  formControlName="tel_fournisseur">
+
+</div>
+
+
+<div class="container3">
+<input type="reset" value="Reset" class="btn" id="rzt">
+<input type="submit" value="Submit" class="btn" id="sub" (click)="update(FormValue.value)">
+
+</div>
+
+
+
+
+</form>

@@ -1,0 +1,25 @@
+<div class="head"><h1>Ajouter un Fournisseur:<mat-icon (click)="closeDialog()">close</mat-icon></h1>
+</div>
+<mat-divider></mat-divider>
+<form #lform="ngForm" (ngSubmit)="add(lform.value)">
+<div class="container">
+<input type="text" placeholder="Nom Fournisseur" id="nomprd" name="nom_fournisseur" ngModel>
+<input type="text" placeholder="Addresser Fournisseur" name="adresse_fournisseur" ngModel>
+</div>
+<div class="container">
+<input type="email" placeholder="Email" name="email_fournisseur" ngModel>
+<input type="text" placeholder="Telephone" name="tel_fournisseur" ngModel (keyup)="onlyNumberKey($event)">
+
+</div>
+
+
+<div class="container3">
+<input type="reset" value="Reset" class="btn" id="rzt">
+<input type="submit" value="Submit" class="btn" id="sub">
+
+</div>
+
+
+
+
+</form>

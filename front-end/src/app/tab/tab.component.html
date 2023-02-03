@@ -1,0 +1,39 @@
+
+<body>
+
+<table id="example" class="table table-striped" style="width:100%">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Office</th>
+    <th>Age</th>
+    <th>Start date</th>
+    <th>Salary</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let fournisseur of fournisseurss" >
+    <td>{{fournisseur.id_fournisseur}}</td>
+    <td>{{fournisseur.nom_fournisseur}}</td>
+    <td>{{fournisseur.adresse_fournisseur}}</td>
+    <td>61</td>
+    <td>2011-04-25</td>
+    <td>$320,800</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <th>Name</th>
+    <th>Position</th>
+    <th>Office</th>
+    <th>Age</th>
+    <th>Start date</th>
+    <th>Salary</th>
+  </tr>
+  </tfoot>
+</table>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.5/js/dataTables.buttons.min.js"></script>
+</body>

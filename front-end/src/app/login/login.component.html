@@ -1,0 +1,22 @@
+<div class="grid">
+  <div class="order__left centered">
+    <div class="form">
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" class="logo" />
+      </div>
+
+<form #lform="ngForm" (ngSubmit)="log(lform.value)" >
+      <input type="text" id="username"  placeholder="Email" autocomplete="off" name="email_user" ngModel>
+      <input type="password" id="password"  placeholder="Password" autocomplete="off" name="pwd_user" ngModel>
+      <button type="submit" class="login__button" >Login</button>
+    </form>
+
+
+    </div>
+  </div><!-- order__left centered -->
+
+  <div class="order__right centered no__overflow">
+    <img class="img" src="https://res.cloudinary.com/diod8pjhj/image/upload/v1670658158/3d1920_e2qpuj.jpg" alt="picture">
+  </div><!-- order__right centered no__overflow -->
+
+</div><!-- end grid -->
